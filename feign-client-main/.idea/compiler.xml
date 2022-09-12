@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.20/18bcea7d5df4d49227b4a0743a536208ce4825bb/lombok-1.18.20.jar" />
+        </processorPath>
+        <module name="feign-client-main.feign-client-main.main" />
+      </profile>
+      <profile name="Annotation profile for springboot-openfeign" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <option name="mapstruct.defaultComponentModel" value="spring" />
+        <option name="mapstruct.suppressGeneratorTimestamp" value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct-processor/unknown/mapstruct-processor-unknown.jar" />
+        </processorPath>
+        <module name="feign-client-main.feign-client-main" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="openfeign" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="feign-client-main.feign-client-main" options="-parameters -Amapstruct.suppressGeneratorTimestamp=true -Amapstruct.defaultComponentModel=spring" />
+    </option>
+  </component>
+</project>
